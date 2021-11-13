@@ -187,3 +187,32 @@ footer {
 		color: white;
 	}
 }
+
+@media (max-width:650px) {
+	.flex1{
+		flex-direction: column;
+	}
+	.flex2{
+		flex-direction: column;
+	}
+
+	.textbox{
+		width: 100%;
+		padding: 25%;
+	}
+
+	.image{
+		align-self: center;
+		width: 100%;
+	}
+
+	.picText1{
+		align-self: center;
+		width: 100%;
+	}
+
+	.picText2{
+		align-self: center;
+		width: 100%;
+	}
+}
