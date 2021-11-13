@@ -65,7 +65,7 @@ p {
 }
 
 .hero {
-  background: url(/images/desktop/image-header.jpg);
+  background: url(../images/desktop/image-header.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -146,7 +146,7 @@ h4 {
 }
 
 .picText1 {
-  background: url(/images/desktop/image-graphic-design.jpg);
+  background: url(../images/desktop/image-graphic-design.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -156,7 +156,7 @@ h4 {
 }
 
 .picText2 {
-  background: url(/images/desktop/image-photography.jpg);
+  background: url(../images/desktop/image-photography.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
