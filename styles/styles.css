@@ -42,6 +42,14 @@ nav a {
   text-decoration: none;
 }
 
+#navBar {
+  visibility: visible;
+}
+
+#logo {
+  overflow-x: visible;
+}
+
 ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,6 +284,12 @@ footer a:hover {
 }
 
 @media (max-width: 850px) {
+  #logo img {
+    overflow-x: visible;
+  }
+  #navBar {
+    visibility: hidden;
+  }
   .hero h1 {
     font-size: 3rem;
     text-align: center;

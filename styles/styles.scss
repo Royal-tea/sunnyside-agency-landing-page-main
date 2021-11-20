@@ -34,6 +34,14 @@ nav {
 	}
 }
 
+#navBar{
+	visibility: visible;
+}
+
+#logo{
+	overflow-x: visible;
+}
+
 ul {
 	display: flex;
 	list-style: none;
@@ -229,11 +237,18 @@ footer {
 }
 
 @media (max-width:850px) {
+	
+	#logo img{
+		overflow-x: visible;
+	}
+
+	#navBar{
+		visibility: hidden;
+	}
 
 	.hero h1{
 		font-size: 3rem;
 		text-align: center;
-		
 	}
 
 	.flex1{
