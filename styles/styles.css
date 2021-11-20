@@ -24,6 +24,7 @@ nav {
 }
 
 nav ul {
+  width: 70%;
   margin: 0;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -271,6 +272,10 @@ footer a:hover {
 }
 
 @media (max-width: 850px) {
+  .hero h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
   .flex1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -291,7 +296,7 @@ footer a:hover {
   }
   .textbox {
     width: 100%;
-    padding: 25%;
+    padding: 25% 0;
   }
   .image {
     -ms-flex-item-align: center;
