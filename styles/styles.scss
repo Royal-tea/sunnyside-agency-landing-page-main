@@ -24,7 +24,7 @@ nav {
 		margin-right: 5%;
 	}
 	a{
-		margin: 10px 4%;
+		margin: 10px 2%;
 		color: white;
 		text-decoration: none;
 	}
@@ -34,6 +34,8 @@ ul {
 	display: flex;
 	list-style: none;
 	font-family: 'Barlow', sans-serif;
+	margin: auto;
+	padding: 0;
 }
 
 li {
@@ -54,6 +56,7 @@ li {
 
 p {
 	font-family: 'Barlow', sans-serif;
+	line-height: 30px;
 }
 
 .hero {
@@ -63,14 +66,17 @@ p {
 	background-repeat: no-repeat;
 	text-align: center;
 	color: white;
-	height: 500px;
+	height: 600px;
 	h1 {
 		font-size: 4em;
+		letter-spacing: .2em;
+		
 		margin: 0;
 		padding-top: 40px;
 	}
 	img {
 		margin-top: 10%;
+		height: 15%;
 	}
 }
 
@@ -85,10 +91,23 @@ p {
 	height: 25%;
 }
 
+.flex3 {
+	display: flex;
+	flex-direction: row-reverse;
+	height: 25%;
+}
+
+#ctTitle{
+	color: #A4A9A9;
+	letter-spacing: .4em;
+	margin: 80px 0;
+}
+
 .testimonials {
 	display: flex;
 	height: 25%;
 	margin-bottom: 50px;
+	padding: 0 5%;
 }
 
 h4 {
@@ -127,7 +146,7 @@ h4 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
-	color: #295C53;
+	color: hsl(167, 40%, 24%);
 	width: 50%;
 }
 
@@ -137,7 +156,7 @@ h4 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
-	color: #18546F;
+	color:hsl(198, 62%, 26%);
 	width: 50%;
 }
 
@@ -153,6 +172,9 @@ h4 {
 		border-radius: 50%;
 		width: 20%;
 	}
+	h5{
+		color: #A4A9A9;	
+	}
 	text-align: center;
 	width: 30%;
 	margin: auto;
@@ -165,7 +187,22 @@ footer {
 	align-items: center;
 	background-color: #90D4C5;
 	color: #2D7464;
+	h3{
+		font-size: 1.5em;
+	}
+	ul{
+		margin-bottom: 1%;
+	}
+	a:hover{
+		color: white;
+	}
+	
 }
+
+.socialMedia img:hover {
+		filter: invert(100%) grayscale(100%) saturate(100%) brightness(200%);
+		cursor: pointer;
+	  }
 
 .imgRow {
 	display: flex;
@@ -188,11 +225,15 @@ footer {
 	}
 }
 
-@media (max-width:650px) {
+@media (max-width:850px) {
 	.flex1{
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 	.flex2{
+		flex-direction: column-reverse;
+	}
+
+	.flex3{
 		flex-direction: column;
 	}
 
@@ -214,5 +255,19 @@ footer {
 	.picText2{
 		align-self: center;
 		width: 100%;
+	}
+
+	.testimonials{
+		flex-direction: column;
+	}
+
+	.client{
+		width: 75%;
+		margin-bottom: 5%;
+		overflow: hidden;
+	}
+
+	.imgRow{
+		
 	}
 }
