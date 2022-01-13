@@ -6,14 +6,14 @@
 
 html {
   font-size: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   background: #FFFBF8;
 }
 
 body {
   margin: 0;
   font-family: 'Fraunces', serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 nav {
@@ -40,6 +40,10 @@ nav a {
   margin: 10px 2%;
   color: white;
   text-decoration: none;
+}
+
+nav #hamburger {
+  visibility: hidden;
 }
 
 #navBar {
@@ -87,7 +91,7 @@ p {
   background-repeat: no-repeat;
   text-align: center;
   color: white;
-  height: 600px;
+  height: 100vh;
 }
 
 .hero h1 {
@@ -174,6 +178,7 @@ h4 {
 
 .image {
   width: 50%;
+  overflow: visible;
 }
 
 .image img {
@@ -289,6 +294,10 @@ footer a:hover {
   }
   #navBar {
     visibility: hidden;
+  }
+  nav #hamburger {
+    visibility: visible;
+    margin: 1em;
   }
   .hero h1 {
     font-size: 3rem;
