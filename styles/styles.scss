@@ -33,7 +33,7 @@ nav {
 		text-decoration: none;
 	}
 
-	#hamburger{
+	#hamburger-btn{
 		visibility: hidden;
 	}
 }
@@ -56,6 +56,19 @@ ul {
 
 li {
 	padding: 10px;
+}
+
+#contact{
+	background-color: white;
+	border-radius: 30px;
+	color: black;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+#contact:hover{
+	background-color: #6DCEFE;
+	color: white;
 }
 
 .currentTab{
@@ -110,6 +123,22 @@ p {
 	display: flex;
 	flex-direction: row-reverse;
 	height: 25%;
+}
+
+#yellowLink{
+	font-weight: 900;
+	color: black;
+	text-decoration-color: #FCF0B5;
+	text-decoration-thickness: 2px;
+
+}
+
+#redLink{
+	font-weight: 900;
+	color: black;
+	text-decoration-color: #FCACA2;
+	text-decoration-thickness: 2px;
+	
 }
 
 #ctTitle{
@@ -241,6 +270,8 @@ footer {
 	}
 }
 
+
+
 @media (max-width:850px) {
 	
 	#logo img{
@@ -248,12 +279,26 @@ footer {
 	}
 
 	#navBar{
-		visibility: hidden;
+		flex-direction: column;
+		display: none;
+		background-color: #FFFBF8;
+		
+		li{
+			align-self: center;
+		}
+		a{
+			color: #848193;
+		}
 	}
 
-	nav #hamburger{
+	#contact{
+		background-color: #FBD700;
+	}
+
+	nav #hamburger-btn{
 		visibility: visible;
 		margin: 1em;
+		height: 100%;
 		}
 
 	.hero h1{

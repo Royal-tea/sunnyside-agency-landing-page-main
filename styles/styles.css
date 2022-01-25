@@ -42,7 +42,7 @@ nav a {
   text-decoration: none;
 }
 
-nav #hamburger {
+nav #hamburger-btn {
   visibility: hidden;
 }
 
@@ -66,6 +66,19 @@ ul {
 
 li {
   padding: 10px;
+}
+
+#contact {
+  background-color: white;
+  border-radius: 30px;
+  color: black;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+#contact:hover {
+  background-color: #6DCEFE;
+  color: white;
 }
 
 .currentTab {
@@ -133,6 +146,22 @@ p {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   height: 25%;
+}
+
+#yellowLink {
+  font-weight: 900;
+  color: black;
+  -webkit-text-decoration-color: #FCF0B5;
+          text-decoration-color: #FCF0B5;
+  text-decoration-thickness: 2px;
+}
+
+#redLink {
+  font-weight: 900;
+  color: black;
+  -webkit-text-decoration-color: #FCACA2;
+          text-decoration-color: #FCACA2;
+  text-decoration-thickness: 2px;
 }
 
 #ctTitle {
@@ -293,11 +322,28 @@ footer a:hover {
     overflow-x: visible;
   }
   #navBar {
-    visibility: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+    background-color: #FFFBF8;
   }
-  nav #hamburger {
+  #navBar li {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #navBar a {
+    color: #848193;
+  }
+  #contact {
+    background-color: #FBD700;
+  }
+  nav #hamburger-btn {
     visibility: visible;
     margin: 1em;
+    height: 100%;
   }
   .hero h1 {
     font-size: 3rem;
